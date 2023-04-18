@@ -63,7 +63,7 @@ ALTER TABLE public.elements OWNER TO freecodecamp;
 CREATE TABLE public.properties (
     atomic_number integer NOT NULL,
     type character varying(30),
-    atomic_mass numeric(9,6) NOT NULL,
+    atomic_mass numeric NOT NULL,
     melting_point_celsius numeric NOT NULL,
     boiling_point_celsius numeric NOT NULL,
     type_id integer NOT NULL
@@ -97,6 +97,8 @@ INSERT INTO public.elements VALUES (2, 'He', 'Helium');
 INSERT INTO public.elements VALUES (3, 'Li', 'Lithium');
 INSERT INTO public.elements VALUES (4, 'Be', 'Beryllium');
 INSERT INTO public.elements VALUES (1000, 'Mt', 'moTanium');
+INSERT INTO public.elements VALUES (9, 'F', 'Fluorine');
+INSERT INTO public.elements VALUES (10, 'Ne', 'Neon');
 
 
 --
@@ -112,6 +114,8 @@ INSERT INTO public.properties VALUES (3, 'metal', 6.940000, 180.54, 1342, 2);
 INSERT INTO public.properties VALUES (4, 'metal', 9.012200, 1287, 2470, 2);
 INSERT INTO public.properties VALUES (5, 'metalloid', 10.810000, 2075, 4000, 3);
 INSERT INTO public.properties VALUES (1000, 'metalloid', 1.000000, 10, 100, 3);
+INSERT INTO public.properties VALUES (9, 'nonmetal', 18.998, -220, -188.1, 1);
+INSERT INTO public.properties VALUES (10, 'nonmetal', 20.18, -248.6, -246.1, 1);
 
 
 --
